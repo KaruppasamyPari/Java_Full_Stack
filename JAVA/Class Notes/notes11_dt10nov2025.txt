@@ -1,0 +1,251 @@
+156 = 1 + 5 + 6
+
+
+156 = 1, 5, 6
+
+156 % 10 = 6
+156/10   = 15
+
+
+15 % 10 = 5
+15/10   = 1
+
+1 % 10 = 1
+1 / 10 = 0
+
+
+sum of digits
+---------------------------
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    System.out.println("enter a number for sum of digits");
+    Scanner scr=new Scanner(System.in);
+    int no=scr.nextInt();
+    int r, s=0;
+    while( no> 0)  // 156>0, 15>0, 1>0, 0>0
+    {
+     
+       r = no % 10;  // r =156 % 10 = 6, 15% 10 = 5, 1%10=1
+       s = s+r; // 0 +  6, ,  s=6+5=11, s=11+1=12
+       no=no/10; // no = 156 / 10 = 15,  15/10 = 1, 1/10=0
+   
+    }
+
+    System.out.println("sum of digits " +s); // 12  [ 156=1+5+6=12 ]
+
+  }
+
+}
+
+
+input: 156
+output : 12
+
+
+Armstrong number
+
+
+153
+
+1 cube + 5 cube + 3 cube 
+
+1 + 125 + 27
+
+153
+
+
+153
+-----
+1 cube
+5 cube
+3 cube
+
+
+no = 153
+temp = no = 153
+
+1, 5, 3
+
+
+s = s + r
+  = s + (r*r*r)
+
+s= 153
+
+s == temp === Armstrong number
+              Not an Armstrong number
+
+no = 0
+
+
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    System.out.println("enter a number for Armstrong number");
+    Scanner scr=new Scanner(System.in);
+    int no=scr.nextInt(); // 153
+    int temp=no; // 153
+    int r, s=0;
+    while( no> 0)  //  153>01, 15>10, 1>0, 0>0 - false
+    {
+     
+       r = no % 10;  //  153 % 10 =  3, 5, 1/10=1
+       s = s+(r*r*r); //  s=0+ 3*3*3 = 0+ 27=27, s=27+5*5*5=27+125=152=162+1*1*1=152+1=153
+       no=no/10; //   no=153/10 = 15, 15/10 = 1, 1/10 = 0
+   
+    }
+
+     if( s == temp )
+      {
+         System.out.println("   armstrong number ");
+      }
+     else
+      {
+         System.out.println(" not an armstrong number ");
+      }
+
+  }
+
+}
+
+
+-------------------------------------
+
+sample
+------------------
+
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    System.out.println("enter a number for ? ");
+    Scanner scr=new Scanner(System.in);
+    int no=scr.nextInt();
+    int r, s=0;
+    while( no> 0)  // 
+    {
+     
+       r = no % 10;  // 
+       s = s+r; // 
+
+        if( no>9)
+        {
+           s=s*10; // 
+        }
+
+       no=no/10; //
+   
+    }
+
+    System.out.println(" result " +s); 
+
+  }
+
+}
+
+
+
+--------------------------------------------
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+  for(int i=1; i<=10;i++)
+  {
+
+	    int no=i;
+	    int r=no%2;
+    
+	   if( r == 1)
+	    {
+	      System.out.println(" odd "+ no);     
+	    }
+	    else
+	    {
+	      System.out.println(" even " + no);
+	    }
+   
+   }
+ 
+
+  }
+
+}
+
+
+Armstrong numbers using [cube]
+-----------------------------------------
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+  for(int i=1; i<=1000;i++)
+  {
+
+    int no=i;
+
+    int temp=no; // 
+    int r, s=0;
+    while( no> 0)  //  
+    {
+     
+       r = no % 10;  //  
+       s = s+(r*r*r); // 
+       no=no/10; //   
+   
+    }
+
+     if( s == temp )
+      {
+         System.out.println(s + "  is a armstrong number ");
+      }
+
+
+   }
+ 
+
+  }
+
+}
+
+
+------------------------------------------------
+
+
+
+
+
+
+

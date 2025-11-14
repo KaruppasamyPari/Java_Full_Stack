@@ -1,0 +1,363 @@
+
+
+* * *
+* * *
+* * *
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=3; j++)
+        {
+           System.out.print("* ");
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+*
+* *
+* * *
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print("* ");
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+1
+1 2
+1 2 3
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(j+" ");
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+1
+2 2
+3 3 3
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(i+" ");
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+1
+2 3
+4 5 6
+
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    int count=1;
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(count+" ");
+           count++;
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+
+1
+* 2
+* * 3
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           if( i == j )
+            {
+              System.out.println(i+" ");
+            }
+            else
+            {
+             System.out.print("* ");
+            }
+
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+*  *  *
+*  *
+*
+your name 
+
+
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+
+    for(int i=3; i>=1; i--)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print("* ");           
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+
+
+1 1
+* * 2 2
+* * * * 3 3
+your name
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           if( i == j )
+            {
+              System.out.println(i+" "+ i+" ");
+            }
+            else
+            {
+             System.out.print("*  * ");
+            }
+
+        }  
+
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+65
+66  66
+67  67  67
+
+char letter='A';
+1
+1 2
+1 2 3
+65
+65 66
+65 66 67
+
+
+1
+2 2 2
+3 3 3 3 3
+4 4 4 4 4 4 4
+
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    int count=1;
+
+    for(int i=1; i<=7; i=i+2)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(count+" ");                     
+        }  
+        count++;
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+A
+B  B
+C  C  C
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    char letter='A';
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(letter+" ");  
+                             
+        }  
+        letter++; 
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+A
+B  C
+D  E  F
+
+import java.io.*;
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    char letter='A';
+
+    for(int i=1; i<=3; i++)
+     {
+        for(int j=1; j<=i; j++)
+        {
+           System.out.print(letter+" ");  
+           letter++;                  
+        }  
+   
+        System.out.print("\n");
+
+     }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

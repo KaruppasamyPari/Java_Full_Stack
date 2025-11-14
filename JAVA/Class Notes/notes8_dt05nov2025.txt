@@ -1,0 +1,122 @@
+asquare =a*a
+(a+b)square = (a+b)*(a+b)=a-sq + ab + ba + b-sq=a-sq+2ab+b-sq
+(a+b)(a+b)
+
+1 4 1 8 9 27 16 64 25 125
+
+
+2 4 6 8 10
+
+1 1 4 8 9 27 16 64 25 125
+
+import java.io.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    int count=1;
+    int limit=5;
+
+    while(count<=limit)
+    {
+
+      System.out.print( (count*count)+"  "+(count*count*count)+"  ");
+      count++;
+
+    }
+
+
+  }
+
+}
+
+
+
+
+1 4 10 20 35 56
+
+ 3  6  10  15 21
+   3  4  5  6
+
+a=3
+a=a+
+
+
+1 4 10 20 35 56
+ 3 6
+
+a = 1
+b = 4
+
+
+no1  = 1 = print( no1)
+no2 = 3
+no3 = 3
+
+no1= no1+no2 = 4
+no2= no3+no2 = 6
+no3++;
+
+
+
+
+
+
+
+
+
+
+a=1
+b=3
+
+c=a+b
+
+1  2  3  4  5  6  7  8  9  10
+
+
+1  2  3  6  10 15 21
+
+
+import java.io.*;
+
+class sample1
+{
+
+ public static void main(String []args)
+  {
+
+    int no1=1;
+    int no2=3;
+    int no3=3;
+
+    while(no1<=56)
+    {
+
+      System.out.print(no1+"  ");
+      no1= no1+no2;
+      no2= no2+no3;
+      no3++;
+
+    }
+
+
+  }
+
+}
+
+
+
+
+
+   
+
+
+
+
+
+  
+
+

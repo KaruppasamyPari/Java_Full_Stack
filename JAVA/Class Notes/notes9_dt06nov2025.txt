@@ -1,0 +1,291 @@
+array
+--------------
+  it is collection of similar elements referred by common name.
+elements are stored in consecutive memory locations. elements cane be accessed by using index or subscripts. index starts from 0 and ends with n-1.
+
+
+syntax
+---------------
+<datatype>  [] arrayname=new datatype[size];
+
+int  []numbers=new int[5];  // indirect 
+int []numbers={10,20,30,40,50};
+
+
+numbers
+ 
+  [0]      [1]    [2]    [3]    [4]
+-------------------------------------------------
+    10   |   20  |  30  |  40  |  50  |
+-------------------------------------------------
+1000     1004    1008   1012   1016
+
+numbers = starting address of the array
+
+
+sample
+----------------
+import java.io.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     //direct initialization of an integer array
+     int[] numbers={10,20,30,40,50};
+
+     for(int i=0; i<5 ; i++)
+     {
+        System.out.println(" element : " + numbers[i]);
+     }
+
+
+    }
+
+}
+
+
+sample
+---------------
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     //indirect initialization of an integer array
+     int[] numbers=new int[5];
+
+     Scanner s=new Scanner(System.in);
+
+     for(int i=0; i<5; i++)
+      {
+          System.out.println(" enter a number");
+          numbers[i] =s.nextInt();
+
+      }
+
+
+     for(int i=0; i<numbers.length ; i++)
+     {
+        System.out.println(" element : " + numbers[i]);
+     }
+
+
+    }
+
+}
+
+
+sample
+---------------
+import java.io.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     //direct initialization of an char array
+      char []letters={'a', 'b','c','d','e'};
+
+     for(int i=0; i<5 ; i++)
+     {
+        System.out.println(" element : " + letters[i]);
+     }
+
+
+    }
+
+}
+
+   
+sample
+--------------
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     //indirect initialization of an char array
+      char []letters=new char[5];
+
+     Scanner s=new Scanner(System.in);
+     for(int i=0; i<5; i++)
+      {
+        System.out.println("enter a character");
+        letters[i]=s.next().charAt(0);
+      }
+
+     for(int i=0; i<5 ; i++)
+     {
+        System.out.println(" element : " + letters[i]);
+     }
+
+
+    }
+
+}
+
+
+Note:
+
+Arrays.toString(arrayname)
+
+used to print all array elements in one statement
+
+-Srihari
+
+
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     
+ int []numbers={10,20,30,40,50};
+
+
+   int a=numbers[0];
+   int b=numbers[2];
+   int c=numbers[0] + numbers[3];
+   System.out.println(" result " + c);
+
+
+    }
+
+}
+
+
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     
+ int []numbers={10,20,30,40,50};
+
+
+   for(int i=4; i>=0; i--)
+    {
+      System.out.println( numbers[i]);
+    }
+
+
+    }
+
+}
+
+
+biggest number in the array
+--------------------------------------
+
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     
+ int []numbers=new int[5];
+
+  Scanner s=new Scanner(System.in);
+  for(int i=0;i<5;i++)
+   {
+       System.out.println("enter a number");
+       numbers[i]=s.nextInt();
+   }
+
+   // {100, 45, 900, 1000, 300}
+
+   int big=numbers[0]; // big = 900
+
+   for(int i=1; i<5;i++)
+    {
+
+     if( numbers[i] > big )
+     {
+       big= numbers[i]; //big=1000
+     }
+
+    }
+
+    System.out.println(" biggest number is " + big);
+
+    }
+
+}
+
+search
+------------------
+
+import java.io.*;
+import java.util.*;
+
+class sample1
+{
+ 
+  public static void main(String []args)
+   {
+     
+ int []numbers={10,20,30,40,50};
+
+
+   System.out.println(" enter a number to be search ");
+   Scanner s=new Scanner(System.in);
+   int number=s.nextInt();
+
+   boolean isFound=false;
+
+   for(int i=0; i<5;i++)
+    {
+
+      if( numbers[i] == number )
+       {
+          isFound=true;
+          break;
+       }
+
+    }
+
+   if(isFound)
+    {
+      System.out.println(" Number is found ");
+    }
+   else
+    {
+      System.out.println(" Number is not found ");
+    }
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
